@@ -39,4 +39,10 @@ defmodule GraphqlServerWeb.Shop do
       shop -> {:ok, shop}
     end
   end
+
+  def update(id, params) do
+    with {:ok, shop} <- find(%{id: id}) do
+      {:ok, Map.merge(shop, params)}
+    end
+  end
 end
