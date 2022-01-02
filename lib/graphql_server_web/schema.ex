@@ -7,5 +7,4 @@ defmodule GraphqlServerWeb.Schema do
   query do
     import_fields :shop_queries
   end
-
 end
