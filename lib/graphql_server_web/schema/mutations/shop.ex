@@ -7,7 +7,7 @@ defmodule GraphqlServerWeb.Schema.Mutations.Shop do
       arg :name, :string
       arg :category, :shop_category
 
-      resolve &GraphqlServerWeb.Resolvers.Shop.update/2
+      resolve &GraphqlServer.Resolvers.Shop.update/2
     end
   end
 end

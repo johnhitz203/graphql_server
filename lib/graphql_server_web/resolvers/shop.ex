@@ -1,5 +1,5 @@
 defmodule GraphqlServerWeb.Resolvers.Shop do
-  alias GraphqlServerWeb.Shop
+  alias GraphqlServer.Shop
 
   def all(params, _), do: Shop.all(params)
 
@@ -11,7 +11,7 @@ defmodule GraphqlServerWeb.Resolvers.Shop do
 
   def update(%{id: id} = params, _) do
     id = String.to_integer(id)
-    
+
     Shop.update(id, Map.delete(params, :id))
   end
 end

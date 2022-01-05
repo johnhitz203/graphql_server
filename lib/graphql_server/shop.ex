@@ -1,4 +1,4 @@
-defmodule GraphqlServerWeb.Shop do
+defmodule GraphqlServer.Shop do
   @shops [
     %{
       id: 1,
